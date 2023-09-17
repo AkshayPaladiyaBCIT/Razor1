@@ -1,0 +1,16 @@
+@page
+@model Razor1.Pages.FutureModel
+@{
+    ViewData["Title"] = "Future";
+    string[] names = new string[] {"Axay","Akshay","John","Doe"};
+    Array.Sort(names);
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    @foreach(string name in names){
+        <p>Hello @name</p>
+    }
+    
+</div>
